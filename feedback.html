@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Feedback</title>
+
+<style>
+#a{
+width:750px;
+height:600px;
+background-color:#4169E1;
+}
+</style>
+<center>
+<br>
+<center><h1>HealthWealth<h1></center >
+<br>
+<hr color="blue">
+<br>
+<br>
+<br>
+<body bgcolor="#A7C7E7">
+<div id="a">
+<br>
+<br>
+<font style="font-size:30px; font-famliy:avalon; "><b>FeedBack</b></font>
+<br>
+<br>
+<input type="text" placeholder=" Enter your name" id="name" style="width:500px; height:50px;  border-radius:15px;"required>
+<br>
+<br>
+
+<textarea placeholder=" Feedback Box" style="font-size:20px; font-famliy:avalon;  width:500px;height:300px; border-radius:15px;" required>
+</textarea>
+<br>
+<br>
+<input type="button" value="Submit" id="name" style="width:500px; height:50px; background-color:green; color:white;border-radius:15px;" onclick="sumbit()">
+</center>
+<br>
+<br>
+<br>
+</div>
+<br>
+<br>
+<center>
+<div id="img">
+<br>
+<br>
+<span id="re" style="font-size:40px;"></span><br>
+<span id="re2" style="font-size:30px;"></span>
+</div></center>
+<br>
+</body>
+<style>
+#img{
+width:500px;
+height:250px;
+position:relative;
+top:50px;
+}
+.animate{
+background-color:white;}
+</style>
+<script>
+function sumbit(){
+b=document.getElementById("name").value;
+c=document.getElementById("img").value;
+document.getElementById("re").innerHTML=b
+document.getElementById("re2").innerHTML="Thanks for giving your feedback"
+re=document.getElementById("img").classList;re.add("animate")
+}
+</script>
+</html>
